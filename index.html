@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4be6211895.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#volunteering">Volunteering</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-xmark"  onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars"  onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi I'm <span>Ky Pham</span>,</h1>
+                <p>a Web Designer from Vietnam</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-1">
+                    <img src="Images/user.png">
+                </div>
+                <div class="about-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Ky Pham. I am currently a freshmen at Vinschool. My favorite color is <span>orange</span>
+                    (as seen in this website's color scheme). My hobbies are playing chess, swimming and helping my sister with
+                    whatever project she is working on. I just learnt how to program in CSS and HTML in about a week and am
+                    aiming to learn java soon. The image above is a duck because I had a friend who gave me rubber duckies 
+                    as a gift and I have grown to like them.</p>
+                    
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills"> 
+                        <ul>
+                            <li><span>HTML/CSS</span><br>Designing and creating websites</li>
+                            <li><span>Robotics</span><br>Creating VEX robots to compete in competitions</li>
+                            <li><span>Developer</span><br>Co-developer of BoxOut, a puzzle game made by Hang Pham. 
+                            <a href="https://github.com/thanhhang1306/BoxOut"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Lamar Robotics Club</span><br>Participated in team 2587S Discobots and created Vex robots. Part of the design team that created the design notebook.</li>
+                            <li><span>Lamar Key Club</span><br>Community service. Have acquired around 10 hours of community service in a semester.</li>
+                            <li><span>Lamar Graphic Design Club</span><br>President of the club. Created graphic designs for other students.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016-2019</span><br>Vinschool</li>
+                            <li><span>2019-2022</span><br>Tanglewood Middle School</li>
+                            <li><span>2022-2023</span><br>Lamar High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="volunteering">
+        <div class="container">
+            <h1 class="sub-title">Volunteering</h1>
+            <div class="volunteering-list">
+                <div class="boo-picture">
+                    <i class="fa-solid fa-ghost"></i>
+                    <h2>West U Boo Bash</h2>
+                    <p><span>2 hours.</span> A holloween event held my West U Elementary School located in Houston, Texas. Volunteers had to manage and supply water stands around the event and support the people attending the event.</p>
+                    <a href="https://www.westupto.org/boobash">Learn more</a>
+                </div>
+                <div class="elder-picture">
+                    <i class="fa-regular fa-envelope"></i>
+                    <h2>Love for our Elders</h2>
+                    <p><span>6 hours.</span> Creating letters for elders in need based on the information recieved by the elders relatives. Can be done individually or in groups and 1 letter is considered half an hour. Maximum of 2 hours a week.</p>
+                    <a href="https://loveforourelders.org/">Learn more</a>
+                </div>
+                <div class="lamar-picture">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h2>Lamar Key Club</h2>
+                    <p><span>5 hours.</span> Participate in weekly discussions regarding community service opportunities around the Houston local area and collaborate with other individuals to implement service project within the school.</p>
+                    <a href="https://keyclublamar.wixsite.com/lhskey">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/website1.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio 1</h3>
+                        <p>First website I have ever created. Start of my HTML journey. Learnt basic HTML 
+                        and a bit of advanced HTML to create the website.</p>
+                        <a href="https://kypham08.github.io/personal-site-1/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/website2.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio 2</h3>
+                        <p>Second website I have ever created. Improved my HTML skills and started learning
+                        basic CSS and some advanced CSS.</p>
+                        <a href="https://kypham08.github.io/personal-site-2/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/robotics.png">
+                    <div class="layer">
+                        <h3>VEX Robotics</h3>
+                        <p>A robot me and my team created in Lamar High School's Robotic Club. Attended in group
+                        conversations, helped write down design notes, and helped create it. 
+                        </p>
+                        <a href="https://www.robotevents.com/teams/VRC/2587S"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> phamkypikachu@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +84 37 2244208</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/phamkypikachu"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/KeyTheNoob"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/kypham08/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href="Images/Ky_H_Resume.pdf" class="btn btn2">Download resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Ky Pham. Special thanks to <a href="https://www.youtube.com/@EasyTutorialsVideo" class="thanks"> Easy Tutorials.</a>
+        </div>
+    </div>
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyZGEctSqlIv2f_XxM71pG23vpBFRKJPUDAXOGChMZtB0S0LxFu5-TI_sUTqcOTSRQUUA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent!"
+            setTimeout(function(){
+                msg.innerHTML = "";
+            },5000)
+            form.reset;
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
+
